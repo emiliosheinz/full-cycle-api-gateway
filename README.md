@@ -37,3 +37,16 @@ It is the only entry point for a set of services, therefore it is a single point
 ## Kong API Gateway
 
 Kong is an open-source API gateway and microservice management layer. It is a scalable, fast, and extensible platform written in Lua that helps you manage your APIs and microservices. Kong runs in front of any RESTful API and is extended through plugins, which provide extra functionality and services beyond the core platform. Most of the plugins are available as open source, but some are commercial and require a license to be used.
+
+### Deployment
+
+- **DB-less mode**: Where all the configuration is stored in memory based on a YAML or JSON file. 
+- **With a database**: Where all the configuration is stored in a database, PostgreSQL or Cassandra for exemple
+
+#### Distributed deployment
+
+Kong can be deployed in a distributed manner, where the control plane and the data plane are separated. The control plane is responsible for managing the configuration and the data plane is responsible for handling the requests. 
+
+#### Hybrid deployment
+
+Kong can be deployed in a hybrid manner, where the control plane and the data plane are combined and the Gateway instances stay separated. This can potentially improve performance and reduce latency since the amount of hits to the database is reduced.
