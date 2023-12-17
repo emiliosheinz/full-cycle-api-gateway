@@ -50,3 +50,14 @@ Kong can be deployed in a distributed manner, where the control plane and the da
 #### Hybrid deployment
 
 Kong can be deployed in a hybrid manner, where the control plane and the data plane are combined and the Gateway instances stay separated. This can potentially improve performance and reduce latency since the amount of hits to the database is reduced.
+
+## Konga
+
+Konga serves as a web-based user interface for the Kong Admin API, providing a straightforward, swift, and user-friendly means to oversee your Kong Gateway setup. This project is both free and open-source, operating under the Apache 2.0 license. Additionally, Konga is constructed on the foundation of Node.js, AngularJS, and Bootstrap 3.
+
+## Running locally
+ 
+1. Make sure to have Docker and Docker Compose installed
+1. Clone this repository
+1. Run `docker-compose up -d` to start the containers
+1. Access Konga at http://localhost:1337

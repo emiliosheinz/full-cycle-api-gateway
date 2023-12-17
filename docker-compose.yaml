@@ -27,7 +27,9 @@ services:
       retries: 5
 
   kong-migration-bootsrap:
-    image: claudioed/kong-fc
+    build:
+      context: .
+      dockerfile: Dockerfile
     deploy:
       restart_policy:
         condition: on-failure
@@ -43,7 +45,9 @@ services:
     command: kong migrations bootstrap
 
   kong-migration-up:
-    image: claudioed/kong-fc
+    build:
+      context: .
+      dockerfile: Dockerfile
     deploy:
       restart_policy:
         condition: on-failure
@@ -59,7 +63,9 @@ services:
     command: kong migrations up
 
   kong:
-    image: claudioed/kong-fc
+    build:
+      context: .
+      dockerfile: Dockerfile
     deploy:
       restart_policy:
         condition: any
