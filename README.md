@@ -36,4 +36,4 @@ It is the only entry point for a set of services, therefore it is a single point
 
 ## Kong API Gateway
 
-Kong is an open-source API gateway and microservice management layer. It is a scalable, fast, and extensible platform written in Lua that helps you manage your APIs and microservices. Kong runs in front of any RESTful API and is extended through plugins, which provide extra functionality and services beyond the core platform.
+Kong is an open-source API gateway and microservice management layer. It is a scalable, fast, and extensible platform written in Lua that helps you manage your APIs and microservices. Kong runs in front of any RESTful API and is extended through plugins, which provide extra functionality and services beyond the core platform. Most of the plugins are available as open source, but some are commercial and require a license to be used.
