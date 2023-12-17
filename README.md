@@ -51,6 +51,16 @@ Kong can be deployed in a distributed manner, where the control plane and the da
 
 Kong can be deployed in a hybrid manner, where the control plane and the data plane are combined and the Gateway instances stay separated. This can potentially improve performance and reduce latency since the amount of hits to the database is reduced.
 
+### Services
+
+A service is an entity representing an external upstream API or microservice. It is a logical boundary encapsulating a specific domain or business capability. A service is associated with a set of routes that are used to define how the service is exposed to the outside world through the gateway.
+
+### Plugins
+
+Plugins are used to extend the functionality of Kong. They can be used to implement authentication, rate limiting, logging, and other features. Kong comes with a set of built-in plugins, but it is also possible to create custom ones. Plugins have 4 different phases of execution:
+
+![Plugin phases](./docs/images/plugin-phases.webp)
+
 ## Konga
 
 Konga serves as a web-based user interface for the Kong Admin API, providing a straightforward, swift, and user-friendly means to oversee your Kong Gateway setup. This project is both free and open-source, operating under the Apache 2.0 license. Additionally, Konga is constructed on the foundation of Node.js, AngularJS, and Bootstrap 3.
