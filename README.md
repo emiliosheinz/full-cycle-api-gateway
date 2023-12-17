@@ -40,8 +40,8 @@ Kong is an open-source API gateway and microservice management layer. It is a sc
 
 ### Deployment
 
-- **DB-less mode**: Where all the configuration is stored in memory based on a YAML or JSON file. 
-- **With a database**: Where all the configuration is stored in a database, PostgreSQL or Cassandra for exemple
+- DB-less mode: Where all the configuration is stored in memory based on a YAML or JSON file. 
+- With a database: Where all the configuration is stored in a database, PostgreSQL or Cassandra for exemple
 
 #### Distributed deployment
 
