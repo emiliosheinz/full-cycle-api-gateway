@@ -61,6 +61,14 @@ Plugins are used to extend the functionality of Kong. They can be used to implem
 
 ![Plugin phases](./docs/images/plugin-phases.webp)
 
+### Monitoring
+
+Kong provides a set of tools to monitor the health of the system. It is possible to monitor the health of the Kong nodes, the services, and the plugins. It is also possible to monitor the performance of the system using Prometheus and Grafana, which are seamlessly integrated with Kong.
+
+### Logging
+
+Kong provides a set of tools to log the requests and responses. It is possible to log the requests and responses to a file, to a TCP or UDP socket, or to a Kafka topic. It is also possible to log the requests and responses to a database, such as PostgreSQL or Cassandra.
+
 ## Konga
 
 Konga serves as a web-based user interface for the Kong Admin API, providing a straightforward, swift, and user-friendly means to oversee your Kong Gateway setup. This project is both free and open-source, operating under the Apache 2.0 license. Additionally, Konga is constructed on the foundation of Node.js, AngularJS, and Bootstrap 3.
